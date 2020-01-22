@@ -15,8 +15,10 @@ Development setup
 ### Install
 
 ```bash
+pip install --user pipenv
+pipenv install -e '.[dev]'
+pipenv shell
 python setup.py develop
-pip install -e '.[dev]'
 ```
 
 Setup mysql schema:
